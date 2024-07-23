@@ -1,0 +1,16 @@
+<h2>Locations</h2>
+<ul class="locations">
+  <li *ngFor="let location of locations">
+    <p>{{location.nome}}</p>
+    <p>UF:</p>
+    <ul>
+      <li>{{location.UF.sigla}}</li>
+      <li>{{location.UF.nome}}</li>
+      <li>Região:</li>
+      <ul>
+        <li>{{location.UF.regiao.sigla}}</li>
+        <li>{{location.UF.regiao.nome}}</li>
+      </ul>
+    </ul>
+  </li>
+</ul>
